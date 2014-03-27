@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project name="Graphe" default="compile" >
+	
+	<target name="clean" >
+		<delete dir="bin" />
+		<delete dir="build" />
+		<delete dir="dist" />
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="build/classes" />
+		<mkdir dir="dist" />
+	</target>
+	
+	<target name="compile" depends="init" >
+		<javac srcdir="src" destdir="build/classes" />
+		<jar destfile="dist/graphe.jar" basedir="build/classes" >
+			<manifest>
+				<attribute name="Main-Class" value="graph.Main" ></attribute>
+			</manifest>
+		</jar>
+	</target>
+	
+	<target name="execute" depends="compile" >
+		<java jar="dist/graphe.jar" fork="true"/>
+	</target>
+	
+</project>

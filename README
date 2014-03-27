@@ -1,0 +1,16 @@
+-> Installer le logiciel 'ant' sous Linux.
+
+Pour compiler le projet : 
+1. Lancer un terminal
+2. Se placer dans le repertoire Thibault_GAUTHIER_Graphe
+3. Exécuter la commande 'ant compile'
+
+Pour lancer le projet : 
+1. Lancer un terminal
+2. Se placer dans le repertoire Thibault_GAUTHIER_Graphe
+3. Exécuter la commande 'ant execute'
+
+Pour nettoyer le projet : 
+1. Lancer un terminal
+2. Se placer dans le repertoire Thibault_GAUTHIER_Graphe
+3. Exécuter la commande 'ant clean'
